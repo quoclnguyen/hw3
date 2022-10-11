@@ -10,7 +10,10 @@ void llpivot(Node *&head, Node *&smaller, Node *&larger, int pivot){
     larger = NULL;
     return;
   }
+
   else{
+    smaller=NULL;
+    larger =NULL;
     pivotHelper(head, smaller, larger, pivot);
   }
   head = NULL;
